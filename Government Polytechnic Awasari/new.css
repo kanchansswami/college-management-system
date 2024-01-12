@@ -1,0 +1,99 @@
+/* Reset default styles */
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header {
+    background-color: #093f68bb;
+    color: #f3e303;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Hero section */
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    color: #9e2323;
+    padding: 100px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #f39c12;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 650px;
+}
+
+
+/* About section */
+
+#about {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0e0f09;
+    color: #e9f2ef;
+    padding: 10px;
+    text-align: center;
+}
+
+.exe{
+
+    margin-left: 40px;
+    background-color: #f39c12;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.txt{
+margin-left: 30px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <title>Departments - College Government Polytechnic Awasari</title>
+    <style>
+        .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+        }
+
+        .slideshow-container img {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Government Polytechnic Awasari</h1>
+        <nav>
+            <ul style="text-align: center;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <!-- <li><a href="studentlife.html">Student Life</a></li> -->
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="newsandevents.html">News and Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <marquee>Welcome to Government Polytechnic Awasari</marquee>
+        </nav>
+    </header>
+
+    <section id="departments">
+        <h2 style="text-align: center;">Departments</h2>
+        <div class="slideshow-container">
+            <img class="slides" src="iteng.jpeg">
+            <img class="slides" src="comeng.jpg">
+            <img class="slides" src="meceng.jpeg">
+            <img class="slides" src="autoeng.jpeg">
+            <img class="slides" src="elctrieng.jpeg">
+            <img class="slides" src="civileng.jpeg">
+            <img class="slides" src="entceng.jpeg">
+            <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+        </div>
+
+        <div class="department">
+
+            <h3>Information Technology</h3>
+            <p>The Department of Information Technology offers a comprehensive program that covers various aspects of <br>Information engineering, including structural design, transportation, and environmental engineering. Our students learn through <br>theoretical instruction
+                and practical application in the field.</p>
+            
+        </div><br><br>
+        <div class="department">
+
+            <h3>Computer Engineering</h3>
+            <p>The Department of Computer Engineering offers a comprehensive program that covers various aspects of <br>computer engineering, including structural design, transportation, and environmental engineering. Our students learn throughbr
+                 <br>theoretical instruction
+                and practical application in the field.</p>
+           
+        </div><br><br>
+
+        <div class="department">
+
+            <h3>Mechanical Engineering</h3>
+            <p>The Department of Mechanical Engineering offers a comprehensive program that equips students with the skills and knowledge in the field of <br>mechanical engineering. Our experienced faculty members and well-equipped labs ensure hands-on learning
+                and practical application of concepts.</p>
+            
+        </div><br><br>
+        <div class="department">
+
+            <h3>Automobile Engineering</h3>
+            <p>The Department of Automobile Engineering offers a comprehensive program that equips students with the skills and knowledge in the field <br>of Automobile engineering. Our experienced faculty members and well-equipped labs ensure <br>hands-on learning
+                and practical application of concepts.</p>
+            
+        </div><br><br>
+
+
+        <div class="department">
+
+            <h3>Electrical Engineering</h3>
+            <p>The Department of Electrical Engineering focuses on developing competent electrical engineers. We provide a strong foundation in <br>electrical principles, power systems, and electronics. Our students gain practical experience through <br>lab work
+                and industry internships.</p>
+            
+        </div><br><br>
+
+        <div class="department">
+            <h3>Civil Engineering</h3>
+            <p>The Department of Civil Engineering offers a comprehensive program that covers various aspects of <br>civil engineering, including structural design, transportation, and environmental engineering. Our students learn through <br>theoretical instruction
+                and practical application in the field.</p>
+           
+        </div><br><br>
+        <div class="department">
+            <h3>Electronics And Telecommunication</h3>
+            <p>The Department of Electronics And Telecommunication offers a comprehensive program that covers various aspects of <br>E&TC engineering, including structural design, transportation, and environmental engineering. Our students learn through <br>theoretical
+                instruction and practical application in the field.</p>
+                
+        </div><br>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 College Government Polytechnic Awasari. All rights reserved.</p>
+    </footer>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("slides");
+        if (n > slides.length) 
+        { slideIndex = 1; }
+        if (n < 1) 
+        { slideIndex = slides.length; }
+        for (i = 0; i < slides.length; i++)
+         {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+   </script>
+</body>
+
+</html>

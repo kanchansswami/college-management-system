@@ -1,0 +1,86 @@
+<html>
+<body style="background-color:orange
+
+">
+<form name="sanika">
+Enter key:<br><input type="text" id="tf1"><br><br>
+Enter Value:<br><input type="text" id="tf2"><br><br>
+
+<input type="button" value="set cookie" onclick="set_cookie()">
+<input type="button" value="Read cookie" onclick="read_cookie()">
+
+<hr>
+Your Cookie<p id="mycookie"></p>
+<hr>
+<input type="button" value="Update cookie" onclick="update_cookie()">
+<input type="button" value="Delete cookie" onclick="delete_cookie()">
+
+</form>
+<script language="javascript" type="text/javascript">
+function set_cookie()
+{
+  var key=document.getElementById("tf1").value;
+  var value=document.getElementById("tf2").value;
+  document.cookie=key+"="+value+";expires=Mon,18 Dec 2023 12:00:00 UTC";
+  alert("Cookie created successfully");
+}
+function read_cookie()
+{
+if(document.cookie)
+{
+  var x=document.cookie;
+  document.getElementById("mycookie").innerHTML=x;
+}
+else
+{
+document.getElementById("mycookie").innerHTML="cookie not found";
+}
+}
+function update_cookie()
+{
+  var key=prompt("Enter Key:");
+  var newvalue=prompt("Enter new value");
+  document.cookie=key+"="+newvalue+";";
+  alert("cookie updated successfully");
+}
+function delete_cookie()
+{
+ var key=prompt("Enter Key:");
+ document.cookie=key+"="+";expires=Mon,18 Dec 2021 12:00:00 UTC";
+ alert("Cookie Delete successfully");
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Image SlideShow</title>
+<script language="javasript" type="text/javascript">
+ var images = ('comeng.jpg',"images (5).jpg","images(6).jpg","images(7).jpg","images(8).jpg","images(10).jpg","images(9).jpg");
+ var count = 0;
+ function previousImage()
+ {
+ if(count!=0)
+ count--;
+ var id = document.getElementById("imageId");
+ id.src = "images/" + images[count];
+ }
+ function nextImage() {
+ if(count!=4)
+ count++;
+ var id = document.getElementById("imageId");
+ id.src = "images/" + images[count];
+ }
+</script>
+</head>
+<body>
+<center>
+ <img id="imageId" src="images/comeng.jpg" width="700" height="400"/>
+ </br></br>
+ <input type="button" value="< Prev Image" onclick="previousImage()"/>
+ <input type="button" value="Next Image >"onclick="nextImage()"/>
+</center>
+</body>
+</html>

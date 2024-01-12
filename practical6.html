@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="practical6.css">
+    <title>Registration Form</title>
+</head>
+<body style="background-color: lightblue;" onload="hello()">
+    <div class="container">
+    <form name="Tej">
+    <h1>Registration Form</h1>
+    <label>First Name:</label>
+    <input type="text" name="firstname" id="n1" size="15" required><br><br>
+    <label for="">Middle Name:</label>
+    <input type="text" name="middlename" id="n2" size="15" ><br><br>
+    <label for="">Last Name:</label>
+    <input type="text" name="lastname" id="n3" size="15"><br><br>
+    
+    <label for="">Year</label>
+    <select name="" id="n4">
+        <option value="year">Year</option>
+        <option value="firstyear">First Year</option>
+        <option value="secondyear">Second Year</option>
+        <option value="thirdyear">Third Year</option>
+    </select><br><br>
+
+    <label for="Gender">Gender</label><br>
+    <input type="radio" name="Gender">Male <br>
+    <input type="radio" name="Gender">Female <br>
+    <input type="radio" name="Gender">Other <br>
+    <label for="">Phone No.:</label>
+     <input type="text" name="phoneno" size="10" id="n5"><br><br>
+     Address:
+     <textarea name="address" id="" cols="30" rows="3" itemid="n6" ></textarea><br><br>
+     Email:
+     <input type="email" name="email" id="n7"><br><br>
+     Password:
+     <input type="password" name="pass" id="n8"><br><br>
+     Confirm Password:
+     <input type="password" name="conpass" id="n9"><br><br>
+    <button value="click" style="margin-left:100px;" onclick="openpopup()"><a>Submit</a></button>
+   <div class="popup" id="popup">
+    <img src="tick.png" alt="">
+    <h2>Submit Successfully!</h2>
+    <button><a href="index.html">OK</a></button>
+   </div>
+</form>
+</div>
+<center>
+    <script>
+        function hello()
+        {
+            alert("Welcome To Government Polytechnic Awasari");
+        }
+        let popup = document.getElementById("popup");
+        function openpopup()
+        {
+            popup.classList.add("open-popup");
+
+        }
+        function closepopup()
+        {
+            popup.classList.add("open-popup");
+
+        }
+    </script>
+</center>   
+</body>
+</html>
